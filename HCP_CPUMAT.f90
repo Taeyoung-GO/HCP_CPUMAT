@@ -1,7 +1,6 @@
 !=============================================================================
 ! HCP_CPUMAT.f90  -  Consolidated HCP Crystal Plasticity UMAT for ABAQUS
 !=============================================================================
-! Simplified from OXFORD-UMAT v3.2 (Demir et al., University of Oxford)
 ! HCP phase only | Sinh slip law | Kocks-Mecking hardening | GND optional
 !
 ! ---- PROPS (31 entries) ---------------------------------------------------
@@ -48,7 +47,7 @@
 !=============================================================================
       module hcp_constants
       implicit none
-      real(8), parameter :: PI     = 3.14159265358979d0
+      real(8), parameter :: PI     = 3.14159
       real(8), parameter :: KB     = 1.38064852d-23   ! Boltzmann (J/K)
       real(8), parameter :: SMALL  = 1.0d-15
       real(8), parameter :: TOL_NR = 1.0d-8           ! NR convergence (MPa)
